@@ -1,0 +1,92 @@
+html{
+  background-color: /*#BBE8EA*/ #A7DAEA /*#96e5ea*/;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+body{
+  text-align: center;
+}
+
+#name{
+  font-size:50px;
+  padding-top:8%;
+  color: white;
+}
+
+h2{
+  text-align: center;
+}
+
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  color:rebeccapurple;
+  padding: 10px 10px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 6px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+a{
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+#content{
+  margin-top:3%;
+  text-align: justify;
+  border: 3px solid white;
+  width: 35%;
+  height:300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img{
+  width:100%;
+}
+
+footer{
+  position: relative;
+  /*left:41%;*/
+  top:25px;
+  text-align: center;
+}

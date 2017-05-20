@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Nancy Liu - Portfolio</title>
+  <title>Nancy Liu</title>
   <link rel="stylesheet" href="style.css" type="text/css">
   <script type="text/javascript"  src ="javascript.js"></script>
 </head>
@@ -9,28 +9,43 @@
   <header id="mainHeader">
     <p id="name">Nancy Liu</p>
     <nav>
-      <li class="activePage" id="home"><a href="#">Home</a></li>
-      <li class=""><a href="about.html">About</a></li>
-      <li class=""><a href="education.html">Education</a></li>
-      <li class=""><a href="experience.html">Experience</a></li>
-      <li class=""><a href="letters.html">Letters of Recommendation</a></li>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'about')">about</button>
+        <button class="tablinks" onclick="openTab(event, 'education')">education</button>
+        <button class="tablinks" onclick="openTab(event, 'experience')">experience</button>
+        <button class="tablinks" onclick="openTab(event, 'letters')">recommendations</button>
+      </div>
     </nav>
   </header>
 
-  <div id="about">
-    <p>My name is Nancy Liu, and I'm currently a junior at Lee Magnet High School. </p>
-  </div>
+  <div id="content">
+    <!--<div id="intro" class="opening">
+      <h3>intro.</h3>
+      <p>Welcome to my portfolio. Click the links above to navigate through the pages.</p>
+    </div>-->
+    <div id="about" class="tabcontent">
+      <h3>about me.</h3>
+      <p>My name is Wanqi (Nancy) Liu and I'm a rising senior at Lee Magnet High School. I was born in Japan and raised in Baton Rouge, Louisiana; I've lived here for basically my whole life and while I'm not Japanese, I <i>am</i> Chinese and can speak Mandarin semi-fluently.</p>
+      <p>I'm taking Web Development I as an elective course at school and currently plan on double majoring (or pairing a major and minor) in computer science and biology (with the goal of doing biomedical research). I enjoy coding for the challenge of creating something from scratch and the satisfaction of solving the problems that arise in the process.</p>
+    </div>
 
-  <div id="education">
-    <p>Lorem ipsum.</p>
-  </div>
+    <div id="education" class="tabcontent">
+      <h3>my education.</h3>
+      <p>When I entered high school in the fall of 2014, I was in the gifted program at McKinley Senior High School. During my sophomore year, I decided that I wanted to be challenged more by my classes, so I transferred to Lee Magnet High School in the fall of 2016 for my junior year.</p>
+      <p>At McKinley, I was a part of Key Club and Mu Alpha Theta (with a brief stint in Youth Legislature, before deciding that civics wasn't for me). Being in the gifted program, my core classes were all gifted (equivalent to honors), with the exception of my sophomore year civics/AP U.S. Gov. class. At Lee, I'm taking all AP core classes and am founder + president of Key Club and Mu Captain of Mu Alpha Theta. Next year, I will be vice president of Mu Alpha Theta and will remain as president of Key Club. Throughout my high school career, I have maintained a 4.5 average GPA.</p>
+    </div>
 
-  <div id="experience">
-    <p>Lorem ipsum.</p>
-  </div>
+    <div id="experience" class="tabcontent">
+      <h3>examples of my work.</h3>
+      <p><img src="images/kids.png" alt="screencap of kid's app"><br><br><a href="https://github.com/topoisomerase/lag-project">kid's app</a></p>
+      <p><img src="images/recycling.png" alt="screencap of recycling website"><br><br><a href="https://github.com/topoisomerase/recycling-new">LMHS Recycling</a></p>
+    </div>
 
-  <div id="letters">
-    <p>insert image here, Dr. Thompkins, Mr. Glueck.</p>
+    <div id="letters" class="tabcontent">
+      <h3>letters of recommendation.</h3>
+      <p><img src="images/stacy.png" alt="letter from mr. stacy, physics ap"><br><br>Mr. Stacy, AP Physics I, LNHS</p>
+      <p><img src="images/thompkins.png" alt="letter from dr. thompkins, biology ii"><br><br>Dr. Thompkins, Biology II-Dual Enrollment, LMHS</p>
+    </div>
   </div>
 
   <footer id="footer">
