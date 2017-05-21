@@ -12,7 +12,11 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById("defaultOpen").click();
+function defaultTab(){
+  document.getElementById("defaultOpen").click();
+}
+
+//document.getElementById("defaultOpen").click();
 
 function onClick(element) {
   document.getElementById("img01").src = element.src;
