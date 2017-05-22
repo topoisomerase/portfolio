@@ -19,6 +19,11 @@ function defaultTab(){
 //document.getElementById("defaultOpen").click();
 
 function onClick(element) {
+  document.getElementById("img00").src = element.src;
+  document.getElementById("modal00").style.display = "block";
+}
+
+function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
 }
